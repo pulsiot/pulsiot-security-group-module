@@ -33,5 +33,7 @@ resource "aws_security_group_rule" "allow_all" {
   to_port           = 0
   protocol          = "-1"
   from_port         = 0
+  cidr_blocks       = var.cidr_blocks
+  ipv6_cidr_blocks  = var.ipv6_cidr_blocks
   security_group_id = aws_security_group.sec_group.id
 }
