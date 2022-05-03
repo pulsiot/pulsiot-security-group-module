@@ -4,7 +4,7 @@ resource "aws_security_group" "sec_group" {
   vpc_id      = var.vpc_id
 
   tags = {
-    Name = "allow_tls"
+    Name = "pulsiot-sg01"
   }
 }
 
